@@ -1,5 +1,18 @@
 # Product Requirements Document | Baby Changing Facilities App | Minimum Viable Product
 
+## Table of Contents
+- [1. Problem / Pain Summary](#1-problem--pain-summary)
+  - [1.1. Core Problem](#11-core-problem)
+  - [1.2. Behavioural Moment](#12-behavioural-moment)
+  - [1.3. Emotional Stress](#13-emotional-stress)
+  - [1.4. Information Gap](#14-information-gap)
+  - [1.5. Venue Gap](#15-venue-gap)
+  - [1.6. Why Existing Solutions Fail](#16-why-existing-solutions-fail)
+  - [1.7. The Job to be Done](#17-the-job-to-be-done)
+  - [1.8. Problem Summary](#18-problem-summary)
+
+---
+
 ## 1. Problem / Pain Summary
 
 ### 1.1. Core Problem
