@@ -17,6 +17,9 @@
     - [2.1.2. Secondary User - Venue Staff / Facility Managers](#212-secondary-user--venue-staff--dacility-managers)
     - [2.1.3. Tertiary User - Other Parents (Asynchronus Consumers)](#213-tertiary-user--other-parents-asynchronus-consumers)
   - [2.2. User Scenarios](#22-user-scenarios)
+    - [2.2.1. Scenario 1: The High-Stress, Immediate Need](#221-scenario-1-the-high-stress-immediate-need)
+    - [2.2.2. Scenario 2: The "I'm Already in a Venue" Moment](#222-scenario-2-the-im-already-in-a-venue-moment)
+    - [2.2.3. Scenario 3: The Planning Ahead Parent](#223-scenario-3-the-planning-ahead-parent)
 
 ---
 
