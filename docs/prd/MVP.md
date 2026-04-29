@@ -147,8 +147,6 @@ This is the core user whose pain is most acute and whose behaviour defines the M
 
 They experience the problem most intensely and most frequently. Their behaviour defines the MVP’s success.
 
----
-
 #### 2.1.2. Secondary User - Venue Staff / Facility Managers
 
 Not the primary user, but they benefit from the system and influence adoption.
@@ -173,8 +171,6 @@ Not the primary user, but they benefit from the system and influence adoption.
 **Why they matter**
 
 They are the supply side of the ecosystem. Their participation improves data quality and trust.
-
----
 
 #### 2.1.3. Tertiary User - Other Parents (Asynchronous Consumers)
 
@@ -210,8 +206,6 @@ She feels time pressure, stress, and embarrassment as the baby becomes increasin
 
 This is the core behavioural moment the MVP must serve.
 
----
-
 #### 2.2.2. Scenario 2: The “I’m Already in a Venue” Moment (Secondary Scenario)
 
 James is in a café with his newborn. The baby suddenly needs changing. The café has a toilet, but he doesn’t know:
@@ -223,8 +217,6 @@ James is in a café with his newborn. The baby suddenly needs changing. The caf�
 He doesn’t want to pack everything up and leave unless he has to. He needs a quick way to check what other parents have said about the facility so he can make a confident decision without disrupting his visit or making multiple trips.
 
 This scenario reinforces the need for ultra‑low‑friction, venue‑specific information.
-
----
 
 #### 2.2.3. Scenario 3: The Planning‑Ahead Parent (Tertiary Scenario)
 
@@ -246,3 +238,106 @@ Parents experience the problem in two primary contexts:
 A third, lower‑intensity scenario involves parents planning ahead and relying on aggregated data.
 
 These scenarios anchor the behavioural requirements for the MVP.
+
+---
+
+## 3. Success Criteria / What Good Looks Like
+
+### 3.1. Functional Success Criteria
+
+#### 3.1.1. Parents can find a facility in under 10 seconds
+
+The product must enable a parent, often one handed and under stress, to identify a nearby baby changing facility with minimal friction.
+
+#### 3.1.2. Parents can assess facility usability at a glance
+
+The facility detail view must provide enough clarity (cleanliness, usability, parent feedback) for a parent to make a confident decision without trial and error.
+
+#### 3.1.3. Parents can leave a review in under 20 seconds
+
+Submitting feedback must be a fast, lightweight, and possible with one hand. No login, no account creation, no heavy forms.
+
+#### 3.1.4. Parents can add a new or missing facility in under 30 seconds
+
+The system must allow rapid contribution of new facilities to improve coverage and data quality. 
+
+#### 3.1.5. The product must work instantly via QR entry
+
+Scanning a QR code in a venue must open the Progressive Web Application (PWA) immediately, with no installation or onboarding.
+
+---
+
+### 3.2. Experience Success Criteria
+
+#### 3.2.1. One handed, time pressured usability
+
+All core interactions must be achievable with one hand, under stress, in a public environment.
+
+#### 3.2.2. Zero friction access (no login, no account)
+
+Parents must be able to use the product without authentication, registration, or profile creation.
+
+#### 3.2.3. Trustworthy, parent generated data
+
+Information must feel credible, recent, and relevant - driven by real parent reviews, not venue marketing.
+
+#### 3.2.4. Clear, simple, emotionally calming UI
+
+The interface must reduce cognitive load in a stressful moment, with minimal text, clear 
+icons, and fast paths to action.
+
+---
+
+### 3.3. Data and Quality Success Criteria
+
+#### 3.3.1. Facilities must have at least one parent generated data point
+
+A facility is only considered "usable" in the system once it has a review, rating, or confirmation.
+
+#### 3.3.2. Reviews must be timestamped and visible
+
+Parents must be able to see how recent the information is to assess reliability.
+
+#### 3.3.3. The system must avoid storing unnecessary personal data
+
+Data collection must be minimal, privacy-first, and compliant with relevant regulations - GDPR(UK), DPA(2018), etc
+
+---
+
+### 3.4. Technical Success Criteria
+
+#### 3.4.1. PWA loads in under 2 seconds on a typical 4G connection
+
+Speed is critical in the moment of need.
+
+#### 3.4.2. Works reliably offline or with poor connectivity
+
+Core flows (viewing cached facility information, leaving a review to sync later) must function even with intermittent signal.
+
+#### 3.4.3. No backend complexity required for MVP
+
+The MVP must rely on lightweight storage and simple APIs to minimise operational overhead. 
+
+---
+
+### 3.5. Behavioural Success Criteria
+
+#### 3.5.1. Parents choose the product over guesswork
+
+The product must be faster and more reliable than wandering around or asking staff.
+
+#### 3.5.2. Parents contribute data without being asked twice
+
+The review flow must be so lightweight that parents naturally add feedback after using a facility.
+
+#### 3.5.3. Venues adopt QR codes voluntarily
+
+The value proposition must be clear enough that cafes, shops, and public venues choose to display QR codes without incentives.
+
+---
+
+### Success Summary
+
+The product is successful if parents can find and assess a baby changing facility in under 10 seconds, leave feedback in under 20 seconds, and trust the information they see - all without login, installation, or friction. The system must be fast, lightweight, privacy first, and usable one handed under stress. Data must be parent generated, recent, and credible. Venues must find it easy to participate by displaying QR codes. The MVP must deliver these outcomes with minimal technical complexity.
+
+---
