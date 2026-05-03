@@ -372,3 +372,102 @@ The value proposition must be clear enough that cafes, shops, and public venues 
 The product is successful if parents can find and assess a baby changing facility in under 10 seconds, leave feedback in under 20 seconds, and trust the information they see - all without login, installation, or friction. The system must be fast, lightweight, privacy first, and usable one handed under stress. Data must be parent generated, recent, and credible. Venues must find it easy to participate by displaying QR codes. The MVP must deliver these outcomes with minimal technical complexity.
 
 ---
+
+## 4. Constraints 
+
+### 4.1. Technical Constraints
+
+#### 4.1.1. PWA, not native
+
+The MVP must be delivered as a lightweight Progressive Web Application (PWA). No native app development, no app store distribution, no installation friction.
+
+#### 4.1.2. No login, no accounts, no authentication
+
+The product must function entirely without user accounts. This eliminates backend complexity, reduces privacy risk, and preserves one handed immediacy. 
+
+#### 4.1.3. Minimal backend
+
+The MVP must rely on simple, lightweight storage and APIs. No complex infrastructure, no microservices, no heavy data pipelines.
+
+#### 4.1.4. Privacy first, minimal data collection
+
+The system must not collect personal data beyond what is strictly necessary for functionality. No tracking, no analytics requiring consent banners, no behaviour profiling. 
+
+#### 4.1.5. Offline tolerant
+
+The PWA must degrade gracefully in low connectivity environments. Cached facility data and queued reviews must function without a stable connection. 
+
+---
+
+### 4.2. Product Constraints
+
+#### 4.2.1. No real time occupancy or sensor integrations
+
+The MVP must not attempt to detect whether a facility is currently occupied or available. No IoT, no staff updated dashboards, no live status feeds.
+
+#### 4.2.2. No venue side dashboard or management tools
+
+Venues are not part of the MVP's operational model. No onboarding, no admin accounts, no analytics.
+
+#### 4.2.3. No moderation queue or complex review system
+
+Reviews must be lightweight and self policing. No manual moderation, no content workflows, no dispute resolution.
+
+#### 4.2.4. No map provider custom integrations
+
+The MVP must use standard mapping APIs without custom layers or paid enterprise features.
+
+---
+
+### 4.3. Operational Constraints
+
+#### 4.3.1. Early venue participation is passive
+
+QR codes will be placed unilaterally in early stages to seed usage and data. No formal venue partnerships, no approval workflows, no sales motion.
+
+#### 4.3.2. Zero dependency on venue cooperation
+
+The product must deliver value even if venues ignore, remove, or never adopt QR codes.
+
+#### 4.3.3. No field team operations
+
+There will be no staff visiting venues, auditing facilities, or collecting data manually.
+
+---
+
+### 4.4. UX Constraints
+
+#### 4.4.1. One handed usability
+
+All core interactions must be achievable with one hand, under stress, in public.
+
+#### 4.4.2. Ultra low cognitive load
+
+The interface must avoid heavy text, complex navigation, or multi-step flows.
+
+#### 4.4.3. No onboarding or tutorials
+
+The product must be instantly usable on first load.
+
+---
+
+### 4.5. Compliance and Legal Constraints
+
+#### 4.5.1. No storage of sensitive personal data
+
+The system must avoid collecting or storing any data that could create GDPR or COPPA obligations.
+
+#### 4.5.2. No claims of venue affiliation
+
+QR codes and facility listings must not imply endorsement or partnership unless explicitly agreed.
+
+#### 4.5.3. No liability for facility conditions
+
+The product must not guarantee cleanliness, safety, or availability - only report user generated feedback.
+
+---
+
+### Constraint Summary
+
+The MVP must be a lightweight, privacy first PWA with no accounts, no real time data, no venue dashboards, and minimal backend complexity. It must deliver value without venue cooperation, support one handed use under stress, and avoid any features that introduce operational overhead, legal exposure, or technical heaviness. Early adoption will be seeded unilaterally through QR codes, with venues treated as passive participants. 
+
