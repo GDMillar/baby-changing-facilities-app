@@ -30,6 +30,15 @@
   - [4.5. Compliance and Legal Constraints](#45-compliance-and-legal-constraints)
   - [4.6. Constraint Summary](#46-constraint-summary)
 
+5. [MVP Scope](#5-mvp-scope)
+   - [5.1 Core User Flow (In Scope)](#51-core-user-flow-in-scope)
+   - [5.2 Data Model (In Scope)](#52-data-model-in-scope)
+   - [5.3 Technical Components (In Scope)](#53-technical-components-in-scope)
+   - [5.4 Experience and Design (In Scope)](#54-experience-and-design-in-scope)
+   - [5.5 Operational Model (In Scope)](#55-operational-model-in-scope)
+   - [5.6 Out of Scope (Explicitly Excluded)](#56-out-of-scope-explicitly-excluded)
+   - [5.7 MVP Scope Summary (Executive Form)](#57-mvp-scope-summary-executive-form)
+
 ---
 
 ## 1. Problem / Pain Summary
@@ -632,3 +641,11 @@ No personal data stored.
 ### 5.7. MVP Scope Summary (Executive Form)
 
 The MVP delivers a fast, frictionless PWA that allows parents to find, assess, and review baby changing facilities in under 30 seconds, with no login and minimal cognitive load. It uses a simple serverless backend, anonymous parent generated data, and unilateral QR seeding to bootstrap adoption. No venue involvement, no real time data, and no complex infrastructure are included in the MVP.
+
+---
+
+## RAIDO
+
+### 6.1. Risks
+
+#### 
