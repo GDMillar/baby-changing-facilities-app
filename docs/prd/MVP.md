@@ -453,3 +453,182 @@ The MVP must be a lightweight, privacy first PWA with no accounts, no real time 
 
 ## 5. MVP Scope
 
+The MVP delivers a lightweight, parent first product that enables parents to quickly find, assess, and review baby changing facilities without login, installation, or friction. It prioritises speed, simplicity, and parent generated data, while avoiding technical heaviness, venue dependencies, or operational overhead. 
+
+### 5.1 Core User Flow (In Scope)
+
+#### 5.1.1. Find a nearby facility
+
+- Map or list view showing facilities within a defined radius
+- Basic filtering (eg. "has table", "accessible", "cleanliness rating")
+- Tap to view facility detail
+
+#### 5.1.2 View Facility Details
+
+- Facility name and location
+- Parent generated cleanliness / usability rating
+- Recent reviews with timestamps
+- "In service / Not in service" status (based on parent reports)
+- Optional photos
+
+#### 5.1.3. Submit a Review (No Login)
+
+- One tap rating
+- Optional quick select tags, eg.:
+  - "Clean"
+  - "Messy"
+  - "No table"
+  - "Accessible"
+- Optional short text comment
+- Optional photo upload
+- Submission in under 20 seconds
+
+#### 5.1.4. Add a Missing Facility
+
+- Simple form:
+  - Name
+  - Location
+  - Type
+  - Optional photo
+- Auto location from device (with permission)
+- Submission in under 30 seconds
+
+#### 5.1.5. QR Code Entry
+
+- Scanning a QR code opens the facility page instantly
+- No installation, no onboarding
+- QR codes placed unilaterally by the founder
+
+---
+
+### 5.2. Data Model (In Scope)
+
+No personal data stored.
+
+#### 5.2.1. Facilities
+
+- ID
+- Name
+- Location (lat/long)
+- Type, eg.:
+  - Cafe
+  - Pub
+  - Shopping centre
+  - Public toilet
+- Attributes, eg.:
+  - Table present
+  - Accessible
+- "In service" status (derived from recent reviews)
+- Optional photos
+
+#### 5.2.2. Reviews
+
+- Facility ID
+- Rating (simple scale)
+- Tags (clean, messy, broken, etc)
+- Timestamps
+- Optional text
+- Optional photos
+
+---
+
+### 5.3. Technical Components (In Scope)
+
+#### 5.3.1. Front End
+
+- Progressive Web Application (PWA) hosted on Azure Static Web Apps
+- Fast load (<2 seconds on 4G)
+- One handed, low cognitive load user interface (UI)
+
+#### 5.3.2. Back End
+
+- Azure Functions for:
+  - Submit review
+  - Submit facility
+  - Fetch facilities
+  - Fetch facility details
+- Lightweight, stateless API
+
+#### 5.3.3. Storage
+
+- Cosmos DB (serverless) or Azure Table Storage
+- Blob storage for photos
+
+#### 5.3.4. Offline Tolerance
+
+- Cached facility data
+- Queued review submission
+
+---
+
+### 5.4. Experience and Design (In Scope)
+
+#### 5.4.1. One Handed Use
+
+- Large tap targets
+- Minimal text
+- Simple flows
+
+#### 5.4.2. Zero Onboarding
+
+- No logon
+- No tutorial
+- No cookie banners (privacy first design)
+
+#### 5.4.3. Emotionally Calming UI
+
+- Clean, uncluttered interface
+- Clear iconography
+- Fast paths to action
+
+---
+
+### 5.5. Operational Model (In Scope)
+
+#### 5.5.1. Unilateral QR Seeding
+
+- Founder/Owner places QR codes in venues without formal agreements
+- QR codes are optional accelerators, not dependencies
+
+#### 5.5.2. No Venue Dashboards
+
+- Venues do not manage their listings
+- No admin accounts
+- No moderation workflows
+
+#### 5.5.3. No Custom Support Function
+
+- Self policing reviews
+- Minimal operational overhead
+
+---
+
+### 5.6. Out of Scope (Explicitly Excluded)
+
+- Real time occupancy or availability
+  - No sensors
+  - No staff updates
+  - No live feeds
+- Venue onboarding or partnerships
+  - No dashboards
+  - No venue accounts
+  - No approval workflows
+- User accounts or authentication
+  - No login
+  - No profiles
+  - No saved preferences
+- Complex review moderation
+  - No manual moderation queue
+  - No dispute resolution
+- Native mobile apps
+  - PWA only
+- Advanced analytics or B2B insights
+  - Future state only, not part of MVP
+- Push notifications
+  - Not required for core value
+
+---
+
+### 5.7. MVP Scope Summary (Executive Form)
+
+The MVP delivers a fast, frictionless PWA that allows parents to find, assess, and review baby changing facilities in under 30 seconds, with no login and minimal cognitive load. It uses a simple serverless backend, anonymous parent generated data, and unilateral QR seeding to bootstrap adoption. No venue involvement, no real time data, and no complex infrastructure are included in the MVP.
