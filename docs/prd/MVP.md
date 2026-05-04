@@ -13,44 +13,22 @@
  
 - [2. Users](#2-users)
   - [2.1. User Identification](#21-user-identification)
-    - [2.1.1. Primary User - The On-the-Go Parent or Carer](#211-primary-user--the-on-the-go-parent-or-carer)
-    - [2.1.2. Secondary User - Venue Staff / Facility Managers](#212-secondary-user--venue-staff--dacility-managers)
-    - [2.1.3. Tertiary User - Other Parents (Asynchronus Consumers)](#213-tertiary-user--other-parents-asynchronus-consumers)
   - [2.2. User Scenarios](#22-user-scenarios)
-    - [2.2.1. Scenario 1: The High-Stress, Immediate Need](#221-scenario-1-the-high-stress-immediate-need)
-    - [2.2.2. Scenario 2: The "I'm Already in a Venue" Moment](#222-scenario-2-the-im-already-in-a-venue-moment)
-    - [2.2.3. Scenario 3: The Planning Ahead Parent](#223-scenario-3-the-planning-ahead-parent)
 
 - [3. Success Criteria / What Good Looks Like](#3-success-criteria--what-good-looks-like)
   - [3.1. Functional Success Criteria](#31-functional-success-criteria)
-    - [3.1.1. Parents can find a facility in under 10 seconds](#311-parents-can-find-a-facility-in-under-10-seconds)
-    - [3.1.2. Parents can assess facility usability at a glance](#312-parents-can-assess-facility-usability-at-a-glance)
-    - [3.1.3. Parents can leave a review in under 20 seconds](#313-parents-can-leave-a-review-in-under-20-seconds)
-    - [3.1.4. Parents can add a new or missing facility in under 30 seconds](#314-parents-can-add-a-new-or-missing-facility-in-under-30-seconds)
-    - [3.1.5. The product must work instantly via QR entry](#315-the-product-must-work-instantly-via-qr-entry)
-
   - [3.2. Experience Success Criteria](#32-experience-success-criteria)
-    - [3.2.1. One handed, time pressured usability](#321-one-handed-time-pressured-usability)
-    - [3.2.2. Zero friction access (no login, no account)](#322-zero-friction-access-no-login-no-account)
-    - [3.2.3. Trustworthy, parent generated data](#323-trustworthy-parent-generated-data)
-    - [3.2.4. Clear, simple, emotionally calming UI](#324-clear-simple-emotionally-calming-ui)
-
   - [3.3. Data and Quality Success Criteria](#33-data-and-quality-success-criteria)
-    - [3.3.1. Facilities must have at least one parent generated data point](#331-facilities-must-have-at-least-one-parent-generated-data-point)
-    - [3.3.2. Reviews must be timestamped and visible](#332-reviews-must-be-timestamped-and-visible)
-    - [3.3.3. The system must avoid storing unnecessary personal data](#333-the-system-must-avoid-storing-unnecessary-personal-data)
-
   - [3.4. Technical Success Criteria](#34-technical-success-criteria)
-    - [3.4.1. PWA loads in under 2 seconds on a typical 4G connection](#341-pwa-loads-in-under-2-seconds-on-a-typical-4g-connection)
-    - [3.4.2. Works reliably offline or with poor connectivity](#342-works-reliably-offline-or-with-poor-connectivity)
-    - [3.4.3. No backend complexity required for MVP](#343-no-backend-complexity-required-for-mvp)
-
   - [3.5. Behavioural Success Criteria](#35-behavioural-success-criteria)
-    - [3.5.1. Parents choose the product over guesswork](#351-parents-choose-the-product-over-guesswork)
-    - [3.5.2. Parents contribute data without being asked twice](#352-parents-contribute-data-without-being-asked-twice)
-    - [3.5.3. Venues adopt QR codes voluntarily](#353-venues-adopt-qr-codes-voluntarily)
 
-- [Success Summary](#success-summary)
+- [4. Constraints](#4-constraints)
+  - [4.1. Technical Constraints](#41-technical-constraints)
+  - [4.2. Product Constraints](#42-product-constraints)
+  - [4.3. Operational Constraints](#43-operational-constraints)
+  - [4.4. UX Constraints](#44-ux-constraints)
+  - [4.5. Compliance and Legal Constraints](#45-compliance-and-legal-constraints)
+  - [4.6. Constraint Summary](#46-constraint-summary)
 
 ---
 
@@ -467,7 +445,11 @@ The product must not guarantee cleanliness, safety, or availability - only repor
 
 ---
 
-### Constraint Summary
+### 4.6. Constraint Summary
 
 The MVP must be a lightweight, privacy first PWA with no accounts, no real time data, no venue dashboards, and minimal backend complexity. It must deliver value without venue cooperation, support one handed use under stress, and avoid any features that introduce operational overhead, legal exposure, or technical heaviness. Early adoption will be seeded unilaterally through QR codes, with venues treated as passive participants. 
+
+---
+
+## 5. MVP Scope
 
