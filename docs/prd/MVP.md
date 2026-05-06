@@ -39,6 +39,13 @@
    - [5.6 Out of Scope (Explicitly Excluded)](#56-out-of-scope-explicitly-excluded)
    - [5.7 MVP Scope Summary (Executive Form)](#57-mvp-scope-summary-executive-form)
 
+- [6. RAIDO](#6-raido)
+  - [6.1. Risks](#61-risks)
+  - [6.2. Assumptions](#62-assumptions)
+  - [6.3. Issues](#63-issues)
+  - [6.4. Dependencies](#64-dependencies)
+  - [6.5. Opportunities](#65-opportunities)
+
 ---
 
 ## 1. Problem / Pain Summary
@@ -648,4 +655,90 @@ The MVP delivers a fast, frictionless PWA that allows parents to find, assess, a
 
 ### 6.1. Risks
 
-#### 
+#### R1: Low initial data density
+Early users may encounter sparse facility coverage, reducing perceived value and slowing adoption.
+
+#### R2: Review quality variability
+Anonymous, unmoderated reviews may include low signal or inconsistent data, affecting trust.
+
+#### R3: QR code removal or vandalism
+Unilateral QR placement may lead to codes being removed, damaged, or ignored.
+
+#### R4: Map API dependency
+Reliance on third party mapping APIs introduces cost, rate limit, and availability risk.
+
+#### R5: PWA discoverability
+Without app store presence, organic discovery may be slower than native app expectations.
+
+#### R6: Photo upload abuse
+Even with minimal moderation, inappropriate images could be submitted.
+
+---
+
+### 6.2. Assumptions
+
+#### A1: Parents will contribute reviews without incentives
+The MVP assumes intrinsic motivation (reciprocity, community benefit, frustration with poor facilities).
+
+#### A2: QR codes materially increase contribution rate
+Scanning is assumed to be the fastest path to review and a meaningful accelerator.
+
+#### A3: Venues will not actively oppose QR placement
+The model assumes passive tolerance rather than cooperation.
+
+#### A4: A simple rating+tags model is sufficient for early trust
+The MVP assumes parents do not require rich review structures to derive value.
+
+#### A5: Serverless architecture will scale within expected usage
+Traffic patterns are assumed to be low-to-moderate during MVP.
+
+---
+
+### 6.3. Issues
+
+#### I1: No moderation workflow
+There is no mechanism to remove inappropriate content beyond manual intervention by the product owner.
+
+#### I2: No venue verification
+Facilities added by users may be inaccurate or duplicated.
+
+#### I3: No user accounts
+Cannot track repeat behaviour, prevent spam, or weight trusted reviewers.
+
+#### I4: No structured taxonomy for facility types
+User-added facilities may introduce inconsistent naming or categorisation.
+
+---
+
+### 6.4. Dependencies
+
+#### D1: Azure Static Web Apps + Functions availability
+Outages or throttling directly impact product availability.
+
+#### D2: Map provider API
+Facility discovery and navigation depend on stable map rendering and geocoding.
+
+#### D3: Device capabilities
+Camera access (for QR scanning and photos) and location permissions are required for core flows.
+
+#### D4: QR code printing and placement
+Physical distribution is required to seed early contribution loops.
+
+---
+
+### 6.5. Opportunities
+
+#### O1: Early community formation
+Parents who contribute early can become advocates and drive organic growth.
+
+#### O2: Venue engagement (future)
+High-performing venues may later seek dashboards, insights, or verification badges.
+
+#### O3: Regional expansion
+Once density is proven in one region, the model scales cleanly to others.
+
+#### O4: Accessibility and inclusivity positioning
+Strong alignment with public good narratives and local authority interest.
+
+#### O5: Data partnerships (future)
+Aggregated, anonymised insights could support councils, transport hubs, or retail groups.
