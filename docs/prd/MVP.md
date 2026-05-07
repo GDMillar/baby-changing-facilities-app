@@ -30,7 +30,7 @@
   - [4.5. Compliance and Legal Constraints](#45-compliance-and-legal-constraints)
   - [4.6. Constraint Summary](#46-constraint-summary)
 
-5. [MVP Scope](#5-mvp-scope)
+- [5. MVP Scope](#5-mvp-scope)
   - [5.1 Core User Flow (In Scope)](#51-core-user-flow-in-scope)
   - [5.2 Data Model (In Scope)](#52-data-model-in-scope)
   - [5.3 Technical Components (In Scope)](#53-technical-components-in-scope)
