@@ -133,3 +133,92 @@ Venue-level reviews.
 #### Signals
 
 Parents want *facility-level* insight, not venue-level sentiment. 
+
+### Local Council Websites
+
+#### Pattern:
+
+Static lists of public amenities
+
+#### Strengths
+
+- Official source
+- Sometimes includes acessibility info
+
+#### Weaknesses:
+
+- Outdated
+- Incomplete
+- Hard to find
+- Not mobile-friendly
+
+#### Signals
+
+Official data is unreliable; user generated data is essential.
+
+### Parenting Groups (Facebook, WhatsApp, Forums, etc)
+
+#### Pattern
+
+Word of mouth recommnedations
+
+#### Strengths
+
+- High trust
+- Real, recent experiences
+- Hyper-local knowledge
+
+#### Weaknesses
+
+- Not searchable
+- Not structured
+- Not persistent
+- Not accessible to newcomers
+
+#### Signals
+
+Parents trust other parents more than institutions or apps.
+
+---
+
+## 3. Cross Competitor Pattern Summary
+
+Across all competitors, several patterns emerge:
+
+#### What works
+
+- **Simplicity** (binary ratings, map-first UI)
+- **Photos** (high trust, low cognitive load)
+- **Recency** (parents care about "last updated")
+- **Crowd-sourcing** (the only way to keep data fresh)
+
+#### What consistently fails
+
+- **Long reviews** (too slow to parse in stressful moments)
+- **Over-complex filters** (parents don't have the attention)
+- **Venue-level data** (doesn't answer the real question: "Is the facility good?")
+- **Static datasets** (decay quickly)
+
+#### What no-one has solved
+
+- A trusted, unified directory
+- Structured, facility-level data
+- Lightweight contribution flows
+- Accessibility metadata
+- Offline friendly UX
+- A one-handed, time-pressured design
+
+---
+
+## 4. Imprications for Our Product
+
+From the competitor landscape, several design principles emerge:
+
+- **Trust is the differentiator** - recency, photos, and parent‑level insights matter more than polish.
+- **Speed beats completeness** - parents need a fast, confident answer, not a long list.
+- **Crowd‑sourcing is mandatory** - no official dataset is sufficient.
+- **Facility‑level granularity is the gap** - this is where we can win.
+- **One‑handed UX is a competitive advantage** - no one optimises for this.
+- **Offline capability is a differentiator** - especially for travel and poor‑signal areas.
+
+These insights feed directly into constraints, opportunities, and the decision log.
