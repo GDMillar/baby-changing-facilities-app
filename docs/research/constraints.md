@@ -81,3 +81,145 @@ The app must:
 ---
 
 ## 2. Product Constraints
+
+### 2.1. No real-time occupancy or sensor integrations
+
+The product cannot rely on:
+
+- IoT sensors
+- Vendor provided APIs
+- Live occupancy feeds
+
+All data is static or user-generated. 
+
+---
+
+### 2.2 No venue-side dashboard or management tools
+
+Venues are not stakeholders in v1.
+
+This Means:
+
+- No venue onboarding
+- No venue verification
+- No venue-submitted updates
+
+The product is parent-first, not venue first.
+
+---
+
+### 2.3. No moderation queue or complex review system
+
+Moderation must be:
+
+- Lightweight
+- Automated where possible
+- Human-in-the-loop only when essential
+
+No heavy admin tooling.
+
+---
+
+### 2.4. No map-provider custom integrations
+
+The app must rely on:
+
+- Standard web map libraries
+- Public APIs
+- No proprietary or paid map integrations in v1
+
+This keeps costs predicatable.
+
+---
+
+## 3. Operational Constraints
+
+### 3.1. Early venue participation is passive
+
+Venues will not actively contribute data.
+
+All early data must come from:
+
+- Parents
+- Open data
+- Manual seeding
+
+---
+
+### 3.2. Zero dependency on venue cooperation
+
+The product must work even if:
+
+- Venues never engage
+- Councils never update datasets
+- No official data exists
+
+Crowd-sourcing is the backbone.
+
+---
+
+### 3.3. No field-team operations
+
+There will be:
+
+- No on-time-ground verification
+- No photography teams
+- No manual audits
+
+The system must scale without human operations.
+
+---
+
+## UX Constraints
+
+### 4.1. One-handed usability
+
+Parents often hold a baby or push a pram.
+
+The app must be operable with:
+
+- One thumb
+- Minimal gestures
+- No typing where possible
+
+---
+
+### 4.2. Ultra-low cognitive load
+
+Parents are stressed and time‑pressured.
+
+The app must:
+
+- Surface the answer immediately
+- Avoid dense text
+- Use clear visual cues
+- Prioritise photos and structured data
+
+---
+
+### 4.3. No onboarding or tutorials
+
+Parents will not read instructions.
+The app must be:
+
+- Self‑explanatory
+- Immediately usable
+- Zero‑learning‑curve
+
+---
+
+## 5. Constraint Summary
+
+These constraints define the shape of the MVP:
+
+- PWA
+- No login
+- Minimal backend
+- Privacy‑first
+- Offline‑friendly
+- Crowd‑sourced data
+- One‑handed, low‑cognitive‑load UX
+- No venue involvement
+- No complex moderation
+
+They ensure the product remains lightweight, trustworthy, and optimised for the real‑world context of parents on the move.
